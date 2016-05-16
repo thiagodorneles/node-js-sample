@@ -9,7 +9,7 @@ app.get('/', function(request, response) {
 })
 
 app.get('/test', function(req, res) {
-    res.send('Funcionando CI')
+    res.send('Funcionando CI ' + process.env.PORT)
 })
 
 app.listen(app.get('port'), function() {
