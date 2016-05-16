@@ -4,5 +4,5 @@ node_js:
   - 0.10.33
 
 after_success:
-  - if [ "$BRANCH" == "master" ]; then git remote add dokku dokku@104.131.173.132:node; fi
+  - if [ "$BRANCH" == "master" ]; then git remote add dokku dokku@104.131.173.132:test; fi
   - if [ "$BRANCH" == "master" ]; then git push dokku master; fi
